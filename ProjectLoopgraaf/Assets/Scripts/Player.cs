@@ -6,23 +6,24 @@ using UnityEngine.AI;
 [RequireComponent(typeof(NavMeshAgent))]
 public class Player : MonoBehaviour {
 
+    // Finds route in the trenches:
     NavMeshAgent pathfinder;
-    Transform target;
-    Vector3 targetPos;
+    Plane groundPlane;
 
 	void Start () {
         pathfinder = GetComponent<NavMeshAgent>();
-        target = transform;
-        targetPos = new Vector3(target.position.x +10, 0, target.position.z + 5);
-        pathfinder.SetDestination(targetPos);
         pathfinder.acceleration = 60f;
+
+        groundPlane = new Plane(Vector3.up, Vector3.zero);
     }
 	
 	void Update () {
+        // Click on point in level to move there. 
+        // Or at least as close as possible.
         if (Input.GetMouseButtonDown(1)) {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            
             float distance;
-            Plane groundPlane = new Plane(Vector3.up, Vector3.zero);
             groundPlane.Raycast(ray, out distance);
             pathfinder.SetDestination(ray.GetPoint(distance));
         }
