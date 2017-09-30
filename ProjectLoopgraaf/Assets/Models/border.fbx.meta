@@ -1,22 +1,23 @@
 fileFormatVersion: 2
-guid: 0f324c7629b41a541881915eeeee7b3d
-timeCreated: 1506769628
+guid: 423cc4fb75717a645bd8f14f86c350c3
+timeCreated: 1506781320
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
     100000: //RootNode
-    100002: default
-    100004: extrudeSide
+    100002: border_COL
+    100004: border_GEO
     400000: //RootNode
-    400002: default
-    400004: extrudeSide
-    2300000: default
-    2300002: extrudeSide
-    3300000: default
-    3300002: extrudeSide
-    4300000: default
-    4300002: extrudeSide
+    400002: border_COL
+    400004: border_GEO
+    2300000: border_COL
+    2300002: border_GEO
+    3300000: border_COL
+    3300002: border_GEO
+    4300000: border_GEO
+    4300002: border_COL
+    9500000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -86,7 +87,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

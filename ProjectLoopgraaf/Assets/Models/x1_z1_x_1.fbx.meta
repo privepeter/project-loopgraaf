@@ -1,17 +1,23 @@
 fileFormatVersion: 2
-guid: 3aa50ede5ecb49340b4f46a3ebaa6594
-timeCreated: 1506769636
+guid: 35921b2451d0b1e408ba2048be71c256
+timeCreated: 1506781320
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
-    100000: _gabc_gabc
-    100002: //RootNode
-    400000: _gabc_gabc
-    400002: //RootNode
-    2300000: _gabc_gabc
-    3300000: _gabc_gabc
-    4300000: _gabc_gabc
+    100000: //RootNode
+    100002: x1_z1_x_1_COL
+    100004: x1_z1_x_1_GEO
+    400000: //RootNode
+    400002: x1_z1_x_1_COL
+    400004: x1_z1_x_1_GEO
+    2300000: x1_z1_x_1_COL
+    2300002: x1_z1_x_1_GEO
+    3300000: x1_z1_x_1_COL
+    3300002: x1_z1_x_1_GEO
+    4300000: x1_z1_x_1_GEO
+    4300002: x1_z1_x_1_COL
+    9500000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -81,7 +87,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
