@@ -28,18 +28,11 @@ public class CameraController : MonoBehaviour {
         }
 
         if (Input.GetAxis("Mouse ScrollWheel") < 0) {
-            Camera.main.orthographicSize++;
-        }
-        if (Input.GetAxis("Mouse ScrollWheel") > 0) {
-            Camera.main.orthographicSize--;
-        }
-
-        /* if (Input.GetAxis("Mouse ScrollWheel") < 0) {
             Camera.main.transform.Translate(Vector3.back);
         }
         if (Input.GetAxis("Mouse ScrollWheel") > 0) {
             Camera.main.transform.Translate(Vector3.forward);
-        } */
+        }
     }
 }
 
